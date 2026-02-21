@@ -207,9 +207,10 @@ STRATEGIES = [
 
 class MainWindow(Adw.ApplicationWindow):
     def __init__(self, app):
-        super().__init__(application=app, title=_("Lugna Rummet"))
+        super().__init__(application=app, title=_("Calming Room"))
         self.set_default_size(450, 650)
         self.settings = _load_settings()
+        self.sessions = self._load_sessions()
 
         main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         self.set_content(main_box)
@@ -217,11 +218,29 @@ class MainWindow(Adw.ApplicationWindow):
         header = Adw.HeaderBar()
         main_box.append(header)
 
+        from lugnarummet.export import show_export_dialog
+        self._show_export_dialog = show_export_dialog
+
+        export_btn = Gtk.Button(icon_name="document-save-symbolic",
+                                tooltip_text=_("Export sessions (Ctrl+E)"))
+        export_btn.connect("clicked", self._on_export)
+        header.pack_end(export_btn)
+
         menu = Gio.Menu()
+        menu.append(_("Export Sessions"), "win.export")
         menu.append(_("Preferences"), "app.preferences")
-        menu.append(_("About Lugna Rummet"), "app.about")
+        menu.append(_("About Calming Room"), "app.about")
         menu_btn = Gtk.MenuButton(icon_name="open-menu-symbolic", menu_model=menu)
         header.pack_end(menu_btn)
+
+        export_action = Gio.SimpleAction.new("export", None)
+        export_action.connect("activate", self._on_export)
+        self.add_action(export_action)
+
+        # Ctrl+E shortcut
+        ctrl = Gtk.EventControllerKey()
+        ctrl.connect("key-pressed", self._on_key)
+        self.add_controller(ctrl)
 
         # View stack
         self.stack = Adw.ViewStack()
@@ -413,6 +432,48 @@ class MainWindow(Adw.ApplicationWindow):
             self.suggestion_label.set_text(_("Very high stress. Press the emergency button or go to breathing immediately. You are safe. 💙"))
 
 
+    def _on_key(self, ctrl, keyval, keycode, state):
+        if state & Gdk.ModifierType.CONTROL_MASK:
+            if keyval == Gdk.KEY_e or keyval == Gdk.KEY_E:
+                self._on_export()
+                return True
+        return False
+
+    def _sessions_path(self):
+        p = Path(GLib.get_user_config_dir()) / "lugnarummet"
+        p.mkdir(parents=True, exist_ok=True)
+        return p / "sessions.json"
+
+    def _load_sessions(self):
+        path = self._sessions_path()
+        if path.exists():
+            try:
+                return json.loads(path.read_text())
+            except Exception:
+                pass
+        return []
+
+    def _save_sessions(self):
+        self._sessions_path().write_text(
+            json.dumps(self.sessions, indent=2, ensure_ascii=False))
+
+    def log_session(self, session_type, duration_min=0, stress_before="", stress_after=""):
+        from datetime import datetime
+        self.sessions.append({
+            "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "type": session_type,
+            "duration": duration_min,
+            "stress_before": stress_before,
+            "stress_after": stress_after,
+        })
+        self.sessions = self.sessions[-200:]
+        self._save_sessions()
+
+    def _on_export(self, *args):
+        self._show_export_dialog(self, self.sessions,
+                                 lambda msg: print(msg))
+
+
 class LugnaRummetApp(Adw.Application):
     def __init__(self):
         super().__init__(application_id=APP_ID)
@@ -437,7 +498,7 @@ class LugnaRummetApp(Adw.Application):
 
     def _on_about(self, *_):
         dialog = Adw.AboutDialog(
-            application_name=_("Lugna Rummet"),
+            application_name=_("Calming Room"),
             application_icon=APP_ID,
             version=__version__,
             developer_name="Daniel Nylander",

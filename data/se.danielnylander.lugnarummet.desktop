@@ -1,14 +1,14 @@
 [Desktop Entry]
-Name=Lugna Rummet
+Name=Calming Room
 Name[sv]=Lugna Rummet
-GenericName=Calming Room
-GenericName[sv]=Lugnt rum
-Comment=Sensory regulation and calming strategies
-Comment[sv]=Sensorisk reglering och lugnande strategier
+GenericName=Sensory Regulation
+GenericName[sv]=Sensorisk reglering
+Comment=Breathing exercises, calming strategies and stress meter for autism and ADHD
+Comment[sv]=Andningsövningar, lugnande strategier och stressmätare för autism och ADHD
 Exec=lugnarummet
 Icon=se.danielnylander.lugnarummet
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;Utility;Accessibility;
-Keywords=calm;breathe;sensory;autism;adhd;
-Keywords[sv]=lugn;andas;sensorisk;autism;adhd;
+Keywords=calm;breathe;sensory;autism;adhd;anxiety;
+Keywords[sv]=lugn;andas;sensorisk;autism;adhd;ångest;
