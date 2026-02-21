@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "lugnarummet"
+version = "0.1.0"
+description = "Sensory regulation and calming strategies for autism and ADHD"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.10"
+authors = [{name = "Daniel Nylander", email = "daniel@danielnylander.se"}]
+
+[project.scripts]
+lugnarummet = "lugnarummet.main:main"
