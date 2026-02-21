@@ -11,7 +11,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
         run: |
           pip install transifex-client
-          tx pull -a --force
+          tx pull -a --force --minimum-perc 20
       - name: Push changes
         run: |
           git config user.name "github-actions"
