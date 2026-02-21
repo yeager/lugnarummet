@@ -17,6 +17,7 @@ gi.require_version("Adw", "1")
 from gi.repository import Adw, Gdk, Gio, GLib, Gtk
 
 from lugnarummet import __version__
+from lugnarummet.accessibility import apply_large_text
 
 # i18n
 try:
