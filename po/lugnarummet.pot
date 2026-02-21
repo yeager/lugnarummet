@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the lugnarummet package.
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: lugnarummet\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 15:25+0100\n"
+"POT-Creation-Date: 2026-02-21 17:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,242 +17,264 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: lugnarummet/export.py:13 lugnarummet/main.py:210 lugnarummet/main.py:501
-msgid "Calming Room"
-msgstr ""
-
-#: lugnarummet/export.py:27 lugnarummet/export.py:78
-msgid "Date"
-msgstr ""
-
-#: lugnarummet/export.py:27 lugnarummet/export.py:80
-msgid "Type"
-msgstr ""
-
-#: lugnarummet/export.py:27
-msgid "Duration (min)"
-msgstr ""
-
-#: lugnarummet/export.py:27
-msgid "Stress before"
-msgstr ""
-
-#: lugnarummet/export.py:27
-msgid "Stress after"
-msgstr ""
-
-#: lugnarummet/export.py:68
-msgid "Calming Sessions"
-msgstr ""
-
-#: lugnarummet/export.py:82
-msgid "Duration"
-msgstr ""
-
-#: lugnarummet/export.py:84
-msgid "Stress"
-msgstr ""
-
-#: lugnarummet/export.py:126
-msgid "Export Calming Sessions"
-msgstr ""
-
-#: lugnarummet/export.py:127
-msgid "Choose export format:"
-msgstr ""
-
-#: lugnarummet/export.py:130
-msgid "Cancel"
-msgstr ""
-
-#: lugnarummet/export.py:131
-msgid "CSV"
-msgstr ""
-
-#: lugnarummet/export.py:132
-msgid "JSON"
-msgstr ""
-
-#: lugnarummet/export.py:133
-msgid "PDF"
-msgstr ""
-
-#: lugnarummet/export.py:154
-msgid "Save Export"
-msgstr ""
-
-#: lugnarummet/export.py:168
-#, python-format
-msgid "Exported %s"
-msgstr ""
-
-#: lugnarummet/export.py:171 lugnarummet/export.py:194
-#, python-format
-msgid "Export error: %s"
-msgstr ""
-
-#: lugnarummet/export.py:176
-msgid "Save PDF"
-msgstr ""
-
-#: lugnarummet/export.py:189
-msgid "PDF exported"
-msgstr ""
-
-#: lugnarummet/export.py:191
-msgid "PDF export requires cairo."
-msgstr ""
-
-#: lugnarummet/main.py:141
+#: main.py:143
 msgid "Tap to start"
 msgstr ""
 
-#: lugnarummet/main.py:142
+#: main.py:144
 msgid "Breathe in…"
 msgstr ""
 
-#: lugnarummet/main.py:143
+#: main.py:145
 msgid "Hold…"
 msgstr ""
 
-#: lugnarummet/main.py:144
+#: main.py:146
 msgid "Breathe out…"
 msgstr ""
 
-#: lugnarummet/main.py:225
+#: main.py:212 main.py:602 export.py:13
+msgid "Calming Room"
+msgstr ""
+
+#: main.py:227
 msgid "Export sessions (Ctrl+E)"
 msgstr ""
 
-#: lugnarummet/main.py:230
+#: main.py:232
 msgid "Export Sessions"
 msgstr ""
 
-#: lugnarummet/main.py:231 lugnarummet/main.py:516
+#: main.py:233 main.py:617
 msgid "Preferences"
 msgstr ""
 
-#: lugnarummet/main.py:232
+#: main.py:234
 msgid "About Calming Room"
 msgstr ""
 
-#: lugnarummet/main.py:253
+#: main.py:258
 msgid "Breathe"
 msgstr ""
 
-#: lugnarummet/main.py:258
+#: main.py:263
 msgid "Strategies"
 msgstr ""
 
-#: lugnarummet/main.py:263
+#: main.py:268
 msgid "How do I feel?"
 msgstr ""
 
-#: lugnarummet/main.py:276
+#: main.py:273
+msgid "Music"
+msgstr ""
+
+#: main.py:289
+msgid "Background Music"
+msgstr ""
+
+#: main.py:293
+msgid "Calming classical music for relaxation"
+msgstr ""
+
+#: main.py:310
+msgid "Play / Pause"
+msgstr ""
+
+#: main.py:343
+msgid ""
+"No music files found.\n"
+"Add .mp3 files to ~/.config/lugnarummet/music/"
+msgstr ""
+
+#: main.py:377
 msgid "Breathing Exercise"
 msgstr ""
 
-#: lugnarummet/main.py:287 lugnarummet/main.py:391
+#: main.py:388 main.py:492
 msgid "Start"
 msgstr ""
 
-#: lugnarummet/main.py:293
+#: main.py:394
 msgid "Stop"
 msgstr ""
 
-#: lugnarummet/main.py:301
+#: main.py:402
 #, python-brace-format
 msgid "Breathe in {in_}s · Hold {hold}s · Breathe out {out}s"
 msgstr ""
 
-#: lugnarummet/main.py:323
+#: main.py:424
 msgid "🆘 I need help NOW"
 msgstr ""
 
-#: lugnarummet/main.py:350
+#: main.py:451
 msgid "How stressed are you right now?"
 msgstr ""
 
-#: lugnarummet/main.py:365
+#: main.py:466
 msgid "Calm"
 msgstr ""
 
-#: lugnarummet/main.py:366
+#: main.py:467
 msgid "Medium"
 msgstr ""
 
-#: lugnarummet/main.py:367
+#: main.py:468
 msgid "Overload"
 msgstr ""
 
-#: lugnarummet/main.py:386
+#: main.py:487
 msgid "Running…"
 msgstr ""
 
-#: lugnarummet/main.py:397
+#: main.py:498
 #, python-brace-format
 msgid "Your favorite strategy: {strategy}"
 msgstr ""
 
-#: lugnarummet/main.py:399
+#: main.py:500
 msgid "Try this: Take 5 deep breaths. Count each one. You are safe."
 msgstr ""
 
-#: lugnarummet/main.py:402
+#: main.py:503
 msgid "You are safe 💙"
 msgstr ""
 
-#: lugnarummet/main.py:405
+#: main.py:506
 msgid "Go to breathing"
 msgstr ""
 
-#: lugnarummet/main.py:406
+#: main.py:507
 msgid "OK"
 msgstr ""
 
-#: lugnarummet/main.py:417
+#: main.py:518
 msgid "You are safe. Take a deep breath."
 msgstr ""
 
-#: lugnarummet/main.py:426
+#: main.py:527
 msgid "You seem calm. Great! Keep doing what you're doing."
 msgstr ""
 
-#: lugnarummet/main.py:428
+#: main.py:529
 msgid "Getting a bit tense. Try a short breathing exercise."
 msgstr ""
 
-#: lugnarummet/main.py:430
+#: main.py:531
 msgid ""
 "High stress. Take a break now. Try the breathing exercise or one of the "
 "strategies."
 msgstr ""
 
-#: lugnarummet/main.py:432
+#: main.py:533
 msgid ""
 "Very high stress. Press the emergency button or go to breathing immediately. "
 "You are safe. 💙"
 msgstr ""
 
-#: lugnarummet/main.py:510
+#: main.py:611
 msgid "Sensory regulation and calming strategies for autism and ADHD"
 msgstr ""
 
-#: lugnarummet/main.py:517
+#: main.py:618
 msgid "Breathing"
 msgstr ""
 
-#: lugnarummet/main.py:520
+#: main.py:621
 msgid "Breathing Pattern"
 msgstr ""
 
-#: lugnarummet/main.py:522
+#: main.py:623
 msgid "Breathe in (seconds)"
 msgstr ""
 
-#: lugnarummet/main.py:527
+#: main.py:628
 msgid "Hold (seconds)"
 msgstr ""
 
-#: lugnarummet/main.py:532
+#: main.py:633
 msgid "Breathe out (seconds)"
+msgstr ""
+
+#: export.py:27 export.py:78
+msgid "Date"
+msgstr ""
+
+#: export.py:27 export.py:80
+msgid "Type"
+msgstr ""
+
+#: export.py:27
+msgid "Duration (min)"
+msgstr ""
+
+#: export.py:27
+msgid "Stress before"
+msgstr ""
+
+#: export.py:27
+msgid "Stress after"
+msgstr ""
+
+#: export.py:68
+msgid "Calming Sessions"
+msgstr ""
+
+#: export.py:82
+msgid "Duration"
+msgstr ""
+
+#: export.py:84
+msgid "Stress"
+msgstr ""
+
+#: export.py:126
+msgid "Export Calming Sessions"
+msgstr ""
+
+#: export.py:127
+msgid "Choose export format:"
+msgstr ""
+
+#: export.py:130
+msgid "Cancel"
+msgstr ""
+
+#: export.py:131
+msgid "CSV"
+msgstr ""
+
+#: export.py:132
+msgid "JSON"
+msgstr ""
+
+#: export.py:133
+msgid "PDF"
+msgstr ""
+
+#: export.py:154
+msgid "Save Export"
+msgstr ""
+
+#: export.py:168
+#, python-format
+msgid "Exported %s"
+msgstr ""
+
+#: export.py:171 export.py:194
+#, python-format
+msgid "Export error: %s"
+msgstr ""
+
+#: export.py:176
+msgid "Save PDF"
+msgstr ""
+
+#: export.py:189
+msgid "PDF exported"
+msgstr ""
+
+#: export.py:191
+msgid "PDF export requires cairo."
 msgstr ""
