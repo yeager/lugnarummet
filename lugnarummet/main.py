@@ -1,4 +1,4 @@
-"""Lugna Rummet — Sensory Regulation app."""
+"""Lugna rummet — Sensory Regulation app."""
 
 import gettext
 import json
