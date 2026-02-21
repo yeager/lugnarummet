@@ -1,5 +1,12 @@
 # Lugna Rummet
 
+
+## Screenshots
+
+| English | Svenska |
+|---------|---------|
+| ![English](screenshots/lugnarummet_en.png) | ![Svenska](screenshots/lugnarummet_sv.png) |
+
 Sensory regulation and calming strategies for people with autism and ADHD.
 
 ## Features
