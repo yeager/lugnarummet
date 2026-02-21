@@ -1,4 +1,4 @@
-"""Export functionality for Lugna Rummet."""
+"""Export functionality for Lugna rummet."""
 
 import csv
 import io
