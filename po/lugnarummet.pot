@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 17:58+0100\n"
+"POT-Creation-Date: 2026-02-21 20:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,264 +17,270 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.py:143
-msgid "Tap to start"
-msgstr ""
-
-#: main.py:144
-msgid "Breathe in…"
-msgstr ""
-
-#: main.py:145
-msgid "Hold…"
-msgstr ""
-
-#: main.py:146
-msgid "Breathe out…"
-msgstr ""
-
-#: main.py:212 main.py:602 export.py:13
+#: src/export.py:13 src/main.py:212 src/main.py:609
 msgid "Calming Room"
 msgstr ""
 
-#: main.py:227
+#: src/export.py:27 src/export.py:78
+msgid "Date"
+msgstr ""
+
+#: src/export.py:27 src/export.py:80
+msgid "Type"
+msgstr ""
+
+#: src/export.py:27
+msgid "Duration (min)"
+msgstr ""
+
+#: src/export.py:27
+msgid "Stress before"
+msgstr ""
+
+#: src/export.py:27
+msgid "Stress after"
+msgstr ""
+
+#: src/export.py:68
+msgid "Calming Sessions"
+msgstr ""
+
+#: src/export.py:82
+msgid "Duration"
+msgstr ""
+
+#: src/export.py:84
+msgid "Stress"
+msgstr ""
+
+#: src/export.py:126
+msgid "Export Calming Sessions"
+msgstr ""
+
+#: src/export.py:127
+msgid "Choose export format:"
+msgstr ""
+
+#: src/export.py:130
+msgid "Cancel"
+msgstr ""
+
+#: src/export.py:131
+msgid "CSV"
+msgstr ""
+
+#: src/export.py:132
+msgid "JSON"
+msgstr ""
+
+#: src/export.py:133
+msgid "PDF"
+msgstr ""
+
+#: src/export.py:154
+msgid "Save Export"
+msgstr ""
+
+#: src/export.py:168
+#, python-format
+msgid "Exported %s"
+msgstr ""
+
+#: src/export.py:171 src/export.py:194
+#, python-format
+msgid "Export error: %s"
+msgstr ""
+
+#: src/export.py:176
+msgid "Save PDF"
+msgstr ""
+
+#: src/export.py:189
+msgid "PDF exported"
+msgstr ""
+
+#: src/export.py:191
+msgid "PDF export requires cairo."
+msgstr ""
+
+#: src/main.py:143
+msgid "Tap to start"
+msgstr ""
+
+#: src/main.py:144
+msgid "Breathe in…"
+msgstr ""
+
+#: src/main.py:145
+msgid "Hold…"
+msgstr ""
+
+#: src/main.py:146
+msgid "Breathe out…"
+msgstr ""
+
+#: src/main.py:227
 msgid "Export sessions (Ctrl+E)"
 msgstr ""
 
-#: main.py:232
+#: src/main.py:232
 msgid "Export Sessions"
 msgstr ""
 
-#: main.py:233 main.py:617
+#: src/main.py:233 src/main.py:624
 msgid "Preferences"
 msgstr ""
 
-#: main.py:234
+#: src/main.py:234
 msgid "About Calming Room"
 msgstr ""
 
-#: main.py:258
+#: src/main.py:258
 msgid "Breathe"
 msgstr ""
 
-#: main.py:263
+#: src/main.py:263
 msgid "Strategies"
 msgstr ""
 
-#: main.py:268
+#: src/main.py:268
 msgid "How do I feel?"
 msgstr ""
 
-#: main.py:273
+#: src/main.py:273
 msgid "Music"
 msgstr ""
 
-#: main.py:289
+#: src/main.py:289
 msgid "Background Music"
 msgstr ""
 
-#: main.py:293
+#: src/main.py:293
 msgid "Calming classical music for relaxation"
 msgstr ""
 
-#: main.py:310
+#: src/main.py:310
 msgid "Play / Pause"
 msgstr ""
 
-#: main.py:343
+#: src/main.py:343
 msgid ""
 "No music files found.\n"
 "Add .mp3 files to ~/.config/lugnarummet/music/"
 msgstr ""
 
-#: main.py:377
+#: src/main.py:349
+msgid ""
+"Public domain music. Performances by Jerzy Kulik.\n"
+"Source: Internet Archive"
+msgstr ""
+
+#: src/main.py:384
 msgid "Breathing Exercise"
 msgstr ""
 
-#: main.py:388 main.py:492
+#: src/main.py:395 src/main.py:499
 msgid "Start"
 msgstr ""
 
-#: main.py:394
+#: src/main.py:401
 msgid "Stop"
 msgstr ""
 
-#: main.py:402
+#: src/main.py:409
 #, python-brace-format
 msgid "Breathe in {in_}s · Hold {hold}s · Breathe out {out}s"
 msgstr ""
 
-#: main.py:424
+#: src/main.py:431
 msgid "🆘 I need help NOW"
 msgstr ""
 
-#: main.py:451
+#: src/main.py:458
 msgid "How stressed are you right now?"
 msgstr ""
 
-#: main.py:466
+#: src/main.py:473
 msgid "Calm"
 msgstr ""
 
-#: main.py:467
+#: src/main.py:474
 msgid "Medium"
 msgstr ""
 
-#: main.py:468
+#: src/main.py:475
 msgid "Overload"
 msgstr ""
 
-#: main.py:487
+#: src/main.py:494
 msgid "Running…"
 msgstr ""
 
-#: main.py:498
+#: src/main.py:505
 #, python-brace-format
 msgid "Your favorite strategy: {strategy}"
 msgstr ""
 
-#: main.py:500
+#: src/main.py:507
 msgid "Try this: Take 5 deep breaths. Count each one. You are safe."
 msgstr ""
 
-#: main.py:503
+#: src/main.py:510
 msgid "You are safe 💙"
 msgstr ""
 
-#: main.py:506
+#: src/main.py:513
 msgid "Go to breathing"
 msgstr ""
 
-#: main.py:507
+#: src/main.py:514
 msgid "OK"
 msgstr ""
 
-#: main.py:518
+#: src/main.py:525
 msgid "You are safe. Take a deep breath."
 msgstr ""
 
-#: main.py:527
+#: src/main.py:534
 msgid "You seem calm. Great! Keep doing what you're doing."
 msgstr ""
 
-#: main.py:529
+#: src/main.py:536
 msgid "Getting a bit tense. Try a short breathing exercise."
 msgstr ""
 
-#: main.py:531
+#: src/main.py:538
 msgid ""
 "High stress. Take a break now. Try the breathing exercise or one of the "
 "strategies."
 msgstr ""
 
-#: main.py:533
+#: src/main.py:540
 msgid ""
 "Very high stress. Press the emergency button or go to breathing immediately. "
 "You are safe. 💙"
 msgstr ""
 
-#: main.py:611
+#: src/main.py:618
 msgid "Sensory regulation and calming strategies for autism and ADHD"
 msgstr ""
 
-#: main.py:618
+#: src/main.py:625
 msgid "Breathing"
 msgstr ""
 
-#: main.py:621
+#: src/main.py:628
 msgid "Breathing Pattern"
 msgstr ""
 
-#: main.py:623
+#: src/main.py:630
 msgid "Breathe in (seconds)"
 msgstr ""
 
-#: main.py:628
+#: src/main.py:635
 msgid "Hold (seconds)"
 msgstr ""
 
-#: main.py:633
+#: src/main.py:640
 msgid "Breathe out (seconds)"
-msgstr ""
-
-#: export.py:27 export.py:78
-msgid "Date"
-msgstr ""
-
-#: export.py:27 export.py:80
-msgid "Type"
-msgstr ""
-
-#: export.py:27
-msgid "Duration (min)"
-msgstr ""
-
-#: export.py:27
-msgid "Stress before"
-msgstr ""
-
-#: export.py:27
-msgid "Stress after"
-msgstr ""
-
-#: export.py:68
-msgid "Calming Sessions"
-msgstr ""
-
-#: export.py:82
-msgid "Duration"
-msgstr ""
-
-#: export.py:84
-msgid "Stress"
-msgstr ""
-
-#: export.py:126
-msgid "Export Calming Sessions"
-msgstr ""
-
-#: export.py:127
-msgid "Choose export format:"
-msgstr ""
-
-#: export.py:130
-msgid "Cancel"
-msgstr ""
-
-#: export.py:131
-msgid "CSV"
-msgstr ""
-
-#: export.py:132
-msgid "JSON"
-msgstr ""
-
-#: export.py:133
-msgid "PDF"
-msgstr ""
-
-#: export.py:154
-msgid "Save Export"
-msgstr ""
-
-#: export.py:168
-#, python-format
-msgid "Exported %s"
-msgstr ""
-
-#: export.py:171 export.py:194
-#, python-format
-msgid "Export error: %s"
-msgstr ""
-
-#: export.py:176
-msgid "Save PDF"
-msgstr ""
-
-#: export.py:189
-msgid "PDF exported"
-msgstr ""
-
-#: export.py:191
-msgid "PDF export requires cairo."
 msgstr ""
