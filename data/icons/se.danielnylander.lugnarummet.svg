@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <circle cx="64" cy="64" r="56" fill="#62a0ea" opacity="0.15"/>
-  <circle cx="64" cy="64" r="40" fill="#62a0ea" opacity="0.25"/>
-  <circle cx="64" cy="64" r="24" fill="#62a0ea" opacity="0.4"/>
-  <circle cx="64" cy="64" r="12" fill="#62a0ea" opacity="0.7"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7764d8"/>
+      <stop offset="1" stop-color="#5e4cb2"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="16" fill="url(#bg)"/>
+  <path d="M44 70 Q54 30 64 50 Q74 70 84 30" stroke="white" stroke-width="4" fill="none" opacity="0.8" stroke-linecap="round"/><circle cx="36" cy="36" r="6" fill="white" opacity="0.5"/><circle cx="92" cy="56" r="4" fill="white" opacity="0.3"/><circle cx="50" cy="76" r="3" fill="white" opacity="0.4"/>
 </svg>
