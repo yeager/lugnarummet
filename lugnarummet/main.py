@@ -598,6 +598,9 @@ class LugnaRummetApp(Adw.Application):
         self.add_action(quit_action)
         self.set_accels_for_action("app.quit", ["<Control>q"])
         win.present()
+        if not self.settings.get("welcome_shown"):
+            self._show_welcome(win)
+
 
     def _create_action(self, name, callback):
         action = Gio.SimpleAction(name=name)
@@ -657,3 +660,39 @@ class LugnaRummetApp(Adw.Application):
 def main():
     app = LugnaRummetApp()
     return app.run()
+
+    # ── Welcome Dialog ───────────────────────────────────────
+
+    def _show_welcome(self, win):
+        dialog = Adw.Dialog()
+        dialog.set_title(_("Welcome"))
+        dialog.set_content_width(420)
+        dialog.set_content_height(480)
+
+        page = Adw.StatusPage()
+        page.set_icon_name("lugnarummet")
+        page.set_title(_("Welcome to The Calm Room"))
+        page.set_description(_(
+            "Breathing exercises and calming activities.\n\n✓ Guided breathing animations\n✓ Calming visual effects\n✓ Customizable session length\n✓ Helps with anxiety and stress"
+        ))
+
+        btn = Gtk.Button(label=_("Get Started"))
+        btn.add_css_class("suggested-action")
+        btn.add_css_class("pill")
+        btn.set_halign(Gtk.Align.CENTER)
+        btn.set_margin_top(12)
+        btn.connect("clicked", self._on_welcome_close, dialog)
+        page.set_child(btn)
+
+        box = Adw.ToolbarView()
+        hb = Adw.HeaderBar()
+        hb.set_show_title(False)
+        box.add_top_bar(hb)
+        box.set_content(page)
+        dialog.present(win)
+
+    def _on_welcome_close(self, btn, dialog):
+        self.settings["welcome_shown"] = True
+        _save_settings(self.settings)
+        dialog.close()
+

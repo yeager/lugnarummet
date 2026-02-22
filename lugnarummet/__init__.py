@@ -1,3 +1,3 @@
 """Lugna rummet — Sensory Regulation for autism and ADHD."""
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
