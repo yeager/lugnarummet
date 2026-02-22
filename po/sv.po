@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-22 06:01+0100\n"
+"PO-Revision-Date: 2026-02-22 08:37+0000\n"
+"Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/305130/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lugnarummet/export.py:13 lugnarummet/main.py:212 lugnarummet/main.py:612
+msgid "Calming Room"
+msgstr ""
+
+#: lugnarummet/export.py:27 lugnarummet/export.py:78
+msgid "Date"
+msgstr ""
+
+#: lugnarummet/export.py:27 lugnarummet/export.py:80
+msgid "Type"
+msgstr ""
+
+#: lugnarummet/export.py:27
+msgid "Duration (min)"
+msgstr ""
+
+#: lugnarummet/export.py:27
+msgid "Stress before"
+msgstr ""
+
+#: lugnarummet/export.py:27
+msgid "Stress after"
+msgstr ""
+
+#: lugnarummet/export.py:68
+msgid "Calming Sessions"
+msgstr ""
+
+#: lugnarummet/export.py:82
+msgid "Duration"
+msgstr ""
+
+#: lugnarummet/export.py:84
+msgid "Stress"
+msgstr ""
+
+#: lugnarummet/export.py:126
+msgid "Export Calming Sessions"
+msgstr ""
+
+#: lugnarummet/export.py:127
+msgid "Choose export format:"
+msgstr ""
+
+#: lugnarummet/export.py:130
+msgid "Cancel"
+msgstr ""
+
+#: lugnarummet/export.py:131
+msgid "CSV"
+msgstr ""
+
+#: lugnarummet/export.py:132
+msgid "JSON"
+msgstr ""
+
+#: lugnarummet/export.py:133
+msgid "PDF"
+msgstr ""
+
+#: lugnarummet/export.py:154
+msgid "Save Export"
+msgstr ""
+
+#: lugnarummet/export.py:168
+#, python-format
+msgid "Exported %s"
+msgstr ""
+
+#: lugnarummet/export.py:171 lugnarummet/export.py:194
+#, python-format
+msgid "Export error: %s"
+msgstr ""
+
+#: lugnarummet/export.py:176
+msgid "Save PDF"
+msgstr ""
+
+#: lugnarummet/export.py:189
+msgid "PDF exported"
+msgstr ""
+
+#: lugnarummet/export.py:191
+msgid "PDF export requires cairo."
+msgstr ""
+
+#: lugnarummet/main.py:143
+msgid "Tap to start"
+msgstr ""
+
+#: lugnarummet/main.py:144
+msgid "Breathe in…"
+msgstr ""
+
+#: lugnarummet/main.py:145
+msgid "Hold…"
+msgstr ""
+
+#: lugnarummet/main.py:146
+msgid "Breathe out…"
+msgstr ""
+
+#: lugnarummet/main.py:227
+msgid "Export sessions (Ctrl+E)"
+msgstr ""
+
+#: lugnarummet/main.py:232
+msgid "Export Sessions"
+msgstr ""
+
+#: lugnarummet/main.py:233 lugnarummet/main.py:627
+msgid "Preferences"
+msgstr ""
+
+#: lugnarummet/main.py:234
+msgid "About Calming Room"
+msgstr ""
+
+#: lugnarummet/main.py:258
+msgid "Breathe"
+msgstr ""
+
+#: lugnarummet/main.py:263
+msgid "Strategies"
+msgstr ""
+
+#: lugnarummet/main.py:268
+msgid "How do I feel?"
+msgstr ""
+
+#: lugnarummet/main.py:273
+msgid "Music"
+msgstr ""
+
+#: lugnarummet/main.py:289
+msgid "Background Music"
+msgstr ""
+
+#: lugnarummet/main.py:293
+msgid "Calming classical music for relaxation"
+msgstr ""
+
+#: lugnarummet/main.py:310
+msgid "Play / Pause"
+msgstr ""
+
+#: lugnarummet/main.py:343
+msgid ""
+"No music files found.\n"
+"Add .mp3 files to ~/.config/lugnarummet/music/"
+msgstr ""
+
+#: lugnarummet/main.py:349
+msgid ""
+"Public domain music. Performances by Jerzy Kulik.\n"
+"Source: Internet Archive"
+msgstr ""
+
+#: lugnarummet/main.py:384
+msgid "Breathing Exercise"
+msgstr ""
+
+#: lugnarummet/main.py:395 lugnarummet/main.py:499
+msgid "Start"
+msgstr ""
+
+#: lugnarummet/main.py:401
+msgid "Stop"
+msgstr ""
+
+#: lugnarummet/main.py:409
+#, python-brace-format
+msgid "Breathe in {in_}s · Hold {hold}s · Breathe out {out}s"
+msgstr ""
+
+#: lugnarummet/main.py:431
+msgid "🆘 I need help NOW"
+msgstr ""
+
+#: lugnarummet/main.py:458
+msgid "How stressed are you right now?"
+msgstr ""
+
+#: lugnarummet/main.py:473
+msgid "Calm"
+msgstr ""
+
+#: lugnarummet/main.py:474
+msgid "Medium"
+msgstr ""
+
+#: lugnarummet/main.py:475
+msgid "Overload"
+msgstr ""
+
+#: lugnarummet/main.py:494
+msgid "Running…"
+msgstr ""
+
+#: lugnarummet/main.py:505
+#, python-brace-format
+msgid "Your favorite strategy: {strategy}"
+msgstr ""
+
+#: lugnarummet/main.py:507
+msgid "Try this: Take 5 deep breaths. Count each one. You are safe."
+msgstr ""
+
+#: lugnarummet/main.py:510
+msgid "You are safe 💙"
+msgstr ""
+
+#: lugnarummet/main.py:513
+msgid "Go to breathing"
+msgstr ""
+
+#: lugnarummet/main.py:514
+msgid "OK"
+msgstr ""
+
+#: lugnarummet/main.py:525
+msgid "You are safe. Take a deep breath."
+msgstr ""
+
+#: lugnarummet/main.py:534
+msgid "You seem calm. Great! Keep doing what you're doing."
+msgstr ""
+
+#: lugnarummet/main.py:536
+msgid "Getting a bit tense. Try a short breathing exercise."
+msgstr ""
+
+#: lugnarummet/main.py:538
+msgid ""
+"High stress. Take a break now. Try the breathing exercise or one of the "
+"strategies."
+msgstr ""
+
+#: lugnarummet/main.py:540
+msgid ""
+"Very high stress. Press the emergency button or go to breathing immediately."
+" You are safe. 💙"
+msgstr ""
+
+#: lugnarummet/main.py:621
+msgid "Sensory regulation and calming strategies for autism and ADHD"
+msgstr ""
+
+#: lugnarummet/main.py:628
+msgid "Breathing"
+msgstr ""
+
+#: lugnarummet/main.py:631
+msgid "Breathing Pattern"
+msgstr ""
+
+#: lugnarummet/main.py:633
+msgid "Breathe in (seconds)"
+msgstr ""
+
+#: lugnarummet/main.py:638
+msgid "Hold (seconds)"
+msgstr ""
+
+#: lugnarummet/main.py:643
+msgid "Breathe out (seconds)"
+msgstr ""
+
+#: lugnarummet/main.py:668
+msgid "Welcome"
+msgstr ""
+
+#: lugnarummet/main.py:674
+msgid "Welcome to The Calm Room"
+msgstr ""
+
+#: lugnarummet/main.py:676
+msgid ""
+"Breathing exercises and calming activities.\n"
+"\n"
+"✓ Guided breathing animations\n"
+"✓ Calming visual effects\n"
+"✓ Customizable session length\n"
+"✓ Helps with anxiety and stress"
+msgstr ""
+
+#: lugnarummet/main.py:679
+msgid "Get Started"
+msgstr ""
