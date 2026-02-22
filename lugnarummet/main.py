@@ -484,7 +484,7 @@ class MainWindow(Adw.ApplicationWindow):
         self._on_stress_changed(scale)
         return page
 
-    def _on_breathe_click(self, *_):
+    def _on_breathe_click(self, *_args):
         if not self.breathing.running:
             self.breathing.start_cycle(
                 self.settings["breathe_in"],
@@ -494,12 +494,12 @@ class MainWindow(Adw.ApplicationWindow):
             self.breathe_btn.set_label(_("Running…"))
             self.breathe_btn.set_sensitive(False)
 
-    def _on_breathe_stop(self, *_):
+    def _on_breathe_stop(self, *_args):
         self.breathing.stop()
         self.breathe_btn.set_label(_("Start"))
         self.breathe_btn.set_sensitive(True)
 
-    def _on_emergency(self, *_):
+    def _on_emergency(self, *_args):
         fav = self.settings.get("favorite_strategy", "")
         if fav:
             msg = _("Your favorite strategy: {strategy}").format(strategy=fav)
@@ -587,7 +587,7 @@ class LugnaRummetApp(Adw.Application):
         super().__init__(application_id=APP_ID)
         self.connect("activate", self._on_activate)
 
-    def _on_activate(self, *_):
+    def _on_activate(self, *_args):
         win = self.props.active_window
         if not win:
             win = MainWindow(self)
@@ -607,7 +607,7 @@ class LugnaRummetApp(Adw.Application):
         action.connect("activate", callback)
         self.add_action(action)
 
-    def _on_about(self, *_):
+    def _on_about(self, *_args):
         dialog = Adw.AboutDialog(
             application_name=_("Calming Room"),
             application_icon=APP_ID,
@@ -622,7 +622,7 @@ class LugnaRummetApp(Adw.Application):
         )
         dialog.present(self.props.active_window)
 
-    def _on_preferences(self, *_):
+    def _on_preferences(self, *_args):
         win = self.props.active_window
         prefs = Adw.PreferencesWindow(title=_("Preferences"), transient_for=win)
         page = Adw.PreferencesPage(title=_("Breathing"))
