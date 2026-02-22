@@ -1,22 +1,29 @@
 # Lugna rummet
 
+Andningsövningar och lugnande strategier vid sensorisk överbelastning.
 
-## Screenshots
+GTK4/Adwaita · Python · v0.1.0 · 68 översättningsbara strängar
 
-| English | Svenska |
-|---------|---------|
-| ![English](screenshots/lugnarummet_en.png) | ![Svenska](screenshots/lugnarummet_sv.png) |
+Del av [Autismappar](https://autismappar.se) — fria verktyg för barn med autism, språkstörning och ADHD.
 
-Sensory regulation and calming strategies for people with autism and ADHD.
+## Installation
 
-## Features
+### Ubuntu / Debian
+```bash
+sudo apt install lugnarummet
+```
+Repo: [yeager/debian-repo](https://github.com/yeager/debian-repo)
 
-- **Breathing exercise** — animated circle with configurable 4-4-6 pattern
-- **Calming strategies** — 8 evidence-based techniques with descriptions
-- **Stress thermometer** — visual stress scale with adaptive suggestions
-- **Emergency button** — quick access to your favorite calming strategy
-- **TTS** — Piper (neural) or espeak-ng voice guidance
+### Fedora
+```bash
+sudo dnf install lugnarummet
+```
+Repo: [yeager/rpm-repo](https://github.com/yeager/rpm-repo)
 
-## License
+## Översättning
 
-GPL-3.0-or-later
+Översätts via [Transifex](https://app.transifex.com/danielnylander/lugnarummet/). 11 språk.
+
+## Licens
+
+GPL-3.0-or-later · Daniel Nylander <daniel@danielnylander.se>
