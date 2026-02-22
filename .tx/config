@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[o:danielnylander:p:lugnarummet:r:lugnarummet]
+[o:danielnylander:p:lugnarummet:r:lugnarummet-pot]
 file_filter = po/<lang>.po
 source_file = po/lugnarummet.pot
 source_lang = en
