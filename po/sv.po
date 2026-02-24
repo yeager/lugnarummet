@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the lugnarummet package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,10 +9,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lugnarummet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-22 06:01+0100\n"
-"PO-Revision-Date: 2026-02-21 13:38+0000\n"
+"POT-Creation-Date: 2026-02-22 17:05+0100\n"
+"PO-Revision-Date: 2026-02-24 09:08+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/305130/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -299,11 +299,11 @@ msgstr "Andas ut (seconds)"
 
 #: lugnarummet/main.py:668
 msgid "Welcome"
-msgstr ""
+msgstr "Välkommen"
 
 #: lugnarummet/main.py:674
 msgid "Welcome to The Calm Room"
-msgstr ""
+msgstr "Välkommen till Lugna rummet"
 
 #: lugnarummet/main.py:676
 msgid ""
@@ -314,7 +314,13 @@ msgid ""
 "✓ Customizable session length\n"
 "✓ Helps with anxiety and stress"
 msgstr ""
+"Andningsövningar och lugnande aktiviteter.\n"
+"\n"
+"✓ Guidade andningsanimationer\n"
+"✓ Lugnande visuella effekter\n"
+"✓ Anpassningsbar sessionlängd\n"
+"✓ Hjälper mot ångest och stress"
 
 #: lugnarummet/main.py:679
 msgid "Get Started"
-msgstr ""
+msgstr "Kom igång"
